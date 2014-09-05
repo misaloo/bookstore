@@ -1,15 +1,13 @@
 <h1>Books</h1>
 
-<p>Availableasof3/18/2014</p>
+<p>Available as of <%=formatted_time(@available_at) %></p>
 
 <ol>
 
-<li>AtlasShrugged</li>
+<% @books.each do|book| %>
 
-<li>Ender'sGame</li>
+<li><%= book %></li>
 
-<li>Hamlet</li>
-
-<li>TheHobbit</li>
+<% end %>
 
 </ol>
