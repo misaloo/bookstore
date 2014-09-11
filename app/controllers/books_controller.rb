@@ -4,4 +4,7 @@ class BooksController < ApplicationController
 
 		@books=["Atlas Shrugged","Ender's Game","Hamlet","The Hobbit"]
 	end
+	def show
+  		@book = Book.find(params[:id])
+	end
 end
