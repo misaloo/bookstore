@@ -6,7 +6,14 @@
 
 <% @books.each do |book| %>
 
-<li><%= link_to(book.title, book) %> by <%= book.author %></li>
+<li>
+  <%= link_to(book.title, book) %>
+  by <%= book.author %><br/>
+  <%= format_average_stars(book) %>
+  <% if book.reviews.any? %>
+    (out of <%= pluralize(book.reviews.size, 'review') %>)
+  <% end %>
+</li>
 
 <% end %>
 
