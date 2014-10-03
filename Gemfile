@@ -2,6 +2,11 @@ source 'https://rubygems.org'
 
 gem 'bootstrap-sass', '~> 3.1.1'
 
+gem 'powerpack'
+
+gem 'kaminari'
+gem 'kaminari-bootstrap', '~> 3.0.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 

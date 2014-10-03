@@ -15,6 +15,6 @@
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
 <p>
-	Read all
-	<% link_to pluralize(@book.reviews.size, 'review'),book_reviews_path(@book) %>
+  Read all
+  <%= link_to pluralize(@book.reviews.size, 'review'), book_reviews_path(@book) %>
 </p>
